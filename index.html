@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Maestra: Periodismo de datos, un método para la investigación en el Perú.</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <aside id="first-modal" class="tinymodal-window">
+      <div class="tinymodal-inner">
+          <button class="tinymodal-close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+          <p>En Junio de 2015, <a href="https://ojo-publico.com/" target="_blank">“Ojo Público”</a> obtuvo el premio a la <b>mejor investigación del año</b> en la categoría “small newsroom” de los <b>Data Journalism Awards 2015</b>, que entrega la <b>Global Editors Network</b>. Este premio se obtuvo gracias a la aplicación <a href="http://cuentasjuradas.ojo-publico.com/" target="_blank">Cuentas Juradas</a>.</p>
+          <img class="img-responsive" src="images/primer_premio.jpg" alt="" style="width:80%; height:auto;">
+      </div>
+    </aside>
+    <aside id="second-modal" class="tinymodal-window">
+      <div class="tinymodal-inner">
+          <button class="tinymodal-close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+          <p>En diciembre de 2015, recibieron el <b>Premio Periodismo y Derechos Humanos Ángel Escobar Jurado</b>, que entrega la <b>Coordinadora Nacional de Derechos Humanos</b> que reconoce a personas, medios de comunicación e instituciones por su aporte al descubrimiento de la verdad, la protección de los derechos fundamentales y la lucha contra la impunidad.</p>
+          <img class="img-responsive" src="images/segundo_premio.jpg" alt="" style="width:80%; height:auto;">
+      </div>
+    </aside>
+    <aside id="third-modal" class="tinymodal-window">
+      <div class="tinymodal-inner">
+          <button class="tinymodal-close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></button>
+          <p>En diciembre de 2016, ganaron el <b>tercer Premio Latinoamericano de Periodismo de Investigación 2016</b>, del <b>Instituto de Prensa y Sociedad (IPYS) y Transparencia Internacional</b>, por el proyecto <a href="https://memoriarobada.ojo-publico.com/" target="_blank">Memoria Robada</a>, investigación colaborativa sobre el tráfico de Patrimonio cultural latinoamericano.</p>
+          <img class="img-responsive" src="images/tercer_premio.jpg" alt="" style="width:80%; height:auto;">
+      </div>
+    </aside>
+    <section id="seccion_portada" class="bg-video">
+      <nav class="navbar navbar-default navbar-fixed-top" id="navegador">
+         <div class="hidden-xs container-fluid">
+           <div class="row">
+             <div class="col-xs-3">
+               <div class="navbar-header">
+                 <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo_tesis.png" alt="logoweb"></a>
+               </div>
+             </div>
+             <div class="col-xs-9">
+               <div class="collapse navbar-collapse navbar-ex1-collapse">
+                 <ul class="nav navbar-nav text-center pull-right">
+                   <li><a href="#ojo-publico" class="scroll">Caso: Ojo Público</a></li>
+                   <li><a href="#prensa-escrita" class="scroll">Prensa escrita</a></li>
+                   <li><a href="#la-republica" class="scroll">Caso: La República</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+     </nav>
+      <div id="contenedor">
+        <video autoplay="autoplay" loop="loop">
+          <source src="images/portada.mp4" type="video/mp4"/>
+        </video>
+        <div class="hero-overlay"></div>
+        <div id="portada" class="container">
+              <h1 class="mg-0"><img class="img-responsive" src="images/logo_tesis.png" alt=""></h1>
+              <p>El presente trabajo tiene como finalidad demostrar que se puede realizar Periodismo de Investigación desarrollando el Periodismo de Datos, en los 14 diarios tradicionales con mayor circulación en Lima. Además, conoceremos el trabajo que viene realizando “Ojo Público” al aplicar el Periodismo de Datos dentro de sus investigaciones y que lo ha convertido en el medio digital más importante de nuestro país.</p>
+              <ul class="secciones v-center" id="botones">
+                <a href="#ojo-publico" class="scroll">
+                  <li>
+                    Caso: Ojo Público
+                  </li>
+                </a>
+                <a href="#prensa-escrita" class="scroll">
+                  <li>
+                    Prensa escrita
+                  </li>
+                </a>
+                <a href="#la-republica" class="scroll">
+                  <li>
+                    Caso: La República
+                  </li>
+                </a>
+              </ul>
+              <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-586153d4fe32f36d"></script> -->
+          </div>
+          <h5 class="pull-right lanacion-data">Video: LA NACION/DATA</h5>
+      </div>
+    </section>
+    <section id="ojo-publico">
+      <div class="container">
+        <h3><a href="https://ojo-publico.com/" class="op-clic">Ojo Público |  Las historias que otros no te quieren contar </a></h3>
+      </div>
+      <div id="equipo"></div>
+      <div class="container">
+          <h2>CASO: Ojo Público</h2>
+          <p>El 23 de Julio de 2014 fue fundado un medio digital llamado Ojo Público, cuya finalidad es ofrecer una serie de investigaciones que mantengan a los lectores informados. Ojo Público utiliza el Periodismo de Datos y sus diferentes herramientas digitales que quiebren los formatos tradicionales y cuenten de una forma distinta la noticia.</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-8">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/mdljcNkN8HY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="col-xs-12 col-sm-4 premios">
+            <div style="width:100%;">
+              <h3 class="text-center">Premios ganados:</h3>
+              <div class="container-data-premios">
+                <button type="button" name="button">
+                  <a href="#third-modal" class="tinymodal-modal modal-premio third-modal"><img src="images/transparencia.png" alt="" style="width:120px;"></a>
+                </button>
+                <button type="button" name="button">
+                  <a href="#first-modal" class="tinymodal-modal modal-premio first-modal"><img src="images/gen.png" alt="" style="width:120px;"></a>
+                </button>
+                <button type="button" name="button">
+                  <a href="#second-modal" class="tinymodal-modal modal-premio second-modal"><img src="images/derechoshumanos.png" alt="" style="width:75px;"></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="separador"/>
+    <section id="prensa-escrita">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+<!--         <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol> -->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="http://genesis.leon.gitlab.io/tesis/images/exitosa.jpg">
+          </div>
+
+          <div class="item">
+            <img src="http://genesis.leon.gitlab.io/tesis/images/correo.jpg">
+          </div>
+        
+          <div class="item">
+            <img src="http://genesis.leon.gitlab.io/tesis/images/elchino.jpg">
+          </div>
+
+          <div class="item">
+            <img src="http://genesis.leon.gitlab.io/tesis/images/elcomercio.jpg">
+          </div> 
+
+          <div class="item">
+            <img src="http://genesis.leon.gitlab.io/tesis/images/elmen.jpg">
+          </div> 
+
+          <div class="item">
+            <img src="http://genesis.leon.gitlab.io/tesis/images/larazon.jpg">
+          </div> 
+          <div class="item">
+            <img src="http://genesis.leon.gitlab.io/tesis/images/larepublica.jpg">
+          </div> 
+
+          <div class="item">
+            <img src="http://genesis.leon.gitlab.io/tesis/images/peru21.jpg">
+          </div>     
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="container">
+          <h2>CASO: PRENSA ESCRITA</h2>
+          <p>El presente trabajo tiene como finalidad demostrar que se puede realizar periodismo de investigación desarrollando el periodismo de datos en los 14 diarios tradicionales con mayor circulación en Lima.El presente trabajo tiene como finalidad demostrar que se puede realizar periodismo de investigación desarrollando el periodismo de datos en los 14 diarios tradicionales con mayor circulación en Lima.El presente trabajo tiene como finalidad demostrar que se puede realizar periodismo de investigación desarrollando el periodismo de datos en los 14 diarios tradicionales con mayor circulación en Lima.</p>
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>¿CUANTOS DIARIOS MASIVOS CUENTAN CON PERIODISTAS DE INVESTIGACIÓN?</h3>
+              <div id="container"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>¿CONSIDERAN EL PERIODISMO DE DATOS UN MÉTODO IMPORTANTE PARA EL PERIODISMO DE INVESTIGACIÓN?</h3>
+              <p>El presente trabajo tiene como finalidad demostrar que se puede realizar periodismo de investigación desarrollando el periodismo de datos en los 14 diarios tradicionales con mayor circulación en Lima.El presente trabajo tiene como finalidad demostrar que se puede realizar periodismo de investigación desarrollando el periodismo de datos en los 14 diarios tradicionales con mayor circulación en Lima.El presente trabajo tiene como finalidad demostrar que se puede realizar periodismo de investigación desarrollando el periodismo de datos en los 14 diarios tradicionales con mayor circulación en Lima.</p>
+              <div id="container-1" style="min-width: 300px; max-width: 100%; height: 400px; margin: 0 auto"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>¿QUÉ HERRAMIENTAS UTILIZAN PARA APLICARLO?</h3>
+              <div id="container-2" style="min-width: 300px; max-width: 100%; height: 500px; margin: 0 auto"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-5 mt-35">
+              <p style="color:#F8A00B">Archivos: </p>
+              <div class="gmail-box">
+                <a href="http://genesis.leon.gitlab.io/tesis/images/encuesta_diarios.pdf" target="_blank" title="ENCUESTA A LOS PRINCIPALES DIARIOS DE LIMA.pdf">
+                <img style="vertical-align:bottom;border:none" src="https://ci3.googleusercontent.com/proxy/y-eEJVZO0ZxtirXuMmRjVZzxAGAwJupv74ajiF4CXmb6sur6K2QwkLXr7GMupOJtKP91SqftvjLoCJwE2ulPcY6K1RZBhXx1bEGr9pISY6roJZcq139mt0P8=s0-d-e1-ft#https://ssl.gstatic.com/docs/doclist/images/icon_10_generic_list.png" class="CToWUd"><span>ENCUESTA A LOS PRINCIPALES DIARIOS DE LIMA.pdf</span></a>
+              </div>
+              <div class="gmail-box">
+                <a href="http://genesis.leon.gitlab.io/tesis/images/encuesta_periodistas.pdf" target="_blank" title="ENCUESTA SOBRE EL TRABAJO PERSONAL DE LOS PERIODISTAS DE INVESTIGACIÓN EN LIMA.pdf">
+                <img style="vertical-align:bottom;border:none" src="https://ci3.googleusercontent.com/proxy/y-eEJVZO0ZxtirXuMmRjVZzxAGAwJupv74ajiF4CXmb6sur6K2QwkLXr7GMupOJtKP91SqftvjLoCJwE2ulPcY6K1RZBhXx1bEGr9pISY6roJZcq139mt0P8=s0-d-e1-ft#https://ssl.gstatic.com/docs/doclist/images/icon_10_generic_list.png" class="CToWUd"><span>ENCUESTA SOBRE EL TRABAJO PERSONAL DE LOS PERIODISTAS DE INVESTIGACIÓN EN LIMA.pdf</span></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <hr class="separador"/>
+    <section id="la-republica">
+      <div class="container">
+          <h2>CASO: LA REPÚBLICA</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/WO_Iu6D1nRA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-xs-12 col-sm-6 texto-larepublica">
+              <div>
+                <p>El 18 de Julio de 2016, la Unidad de Investigación de La República se convirtió en el primer diario tradicional del Perú en implementar una plataforma digital para desarrollar el Periodismo de Datos. La Unidad de Investigación cuenta con cinco periodistas y dos programadores, quienes trabajan de la mano para lograr informar de una manera más sencilla las investigaciones que realizan.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer class="v-center">
+      <div id="footer">
+        <div class="container pd-56">
+          <div class="row text-center">
+            <div class="col-xs-12 col-sm-6 logos v-center">
+                  <a href="#" alt="logo tesis"><img src="images/logo_tesis.png" class="logo-footer img-responsive"></a>
+            </div>
+            <div class="col-xs-12 col-sm-offset-1 col-sm-5 logos v-center">
+              <ul class="creditos text-center pd-0">
+                <li>
+                  <h4>Investigación:</h4>
+                  <li class="mb-14">
+                    <a href="" target="_blank">Jhosselyn Navidad Arango</a>
+                  </li>
+                  <li class="mb-14">
+                    <a href="" target="_blank">Alexander Gutierrez Alarcón</a>
+                  </li>
+                </li>
+                <li>
+                  <h4>Desarrollo web:</h4>
+                  <li class="mb-14">
+                    <a href="mailto:genesis.leon@glr.pe" target="_blank">Génesis León</a>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/tinyModal.js"></script>
+    <script>
+        var links = document.querySelectorAll('a.tinymodal-modal');
+        for (var i = 0; links.length > i; i++) {
+          links[i].addEventListener("click", function(event){  // callback
+            event.preventDefault();
+            var element = this.getAttribute("href");
+            tinyModal.openModal(element, function(){
+              var closeLink = this.querySelectorAll('a[href="javascript:closeModal()"]');
+              if (closeLink.length < 1) {
+                var closeLink = document.createElement("a");
+                closeLink.setAttribute("href","javascript:closeModal()");
+                this.appendChild(closeLink);
+              }
+            });
+          });
+        }
+    </script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

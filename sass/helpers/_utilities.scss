@@ -1,0 +1,54 @@
+@import "./helpers/variables.scss";
+
+.mg-0{
+	margin: 0px !important;
+}
+
+.mv-21{
+	margin-top: 21px;
+	margin-bottom: 21px;
+}
+
+.pd-0{
+	padding: 0px !important;
+}
+.pd-56{
+	padding: 56px;
+}
+.mt-21{
+	margin-top:21px;
+}
+.mb-14{
+	margin-bottom: 14px;
+}
+.mb-35{
+  margin-bottom: 35px;
+}
+
+.mb-56 {
+  margin-bottom: 56px;
+}
+
+.mt-35{
+	margin-top: 35px;
+}
+.mt-60{
+  margin-top: 60px;
+}
+
+.v-center {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt-container{
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 767px) {
+  .mt-container{
+    margin-top: 35px;
+  }
+}
