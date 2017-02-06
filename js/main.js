@@ -11,9 +11,9 @@ $(function() {
       gif_portada_video.style.width=ancho + 'px';
       jpg_equipo_op.style.height=altura + 'px';
       navegador();
-      // $('.carousel').carousel({
-      //   interval: 2000
-      // })
+      $('.carousel').carousel({
+        interval: 3000
+      })
       
 
       var myFunction =  function () {
