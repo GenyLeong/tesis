@@ -280,7 +280,7 @@ Highcharts.chart('container-1', {
                 },
                 chartOptions: {
                     plotOptions: {
-                        pie: {
+                        column: {
                             shadow: false,
                             center: ['50%', '50%'],
                             allowPointSelect: true,
@@ -296,9 +296,7 @@ Highcharts.chart('container-1', {
                             enabled: true,
                             formatter: function() {
                                 return this.y > 5 ? +this.point.name : null;
-                            },
-                            distance: -1,
-                            padding: 5
+                            }
                         },
                         showInLegend: true,
                     }],
@@ -318,6 +316,15 @@ Highcharts.chart('container-1', {
     for (var i = 0; i < svg_item.length; i++) {
         svg_item[i].style.fontFamily = "Noticia Text";
     }
+
+    for (var i = 0; i < column_ancho.length; i++) {
+        column_ancho[i].style.width = 60 + "px";
+    }
+
+    for (var i = 0; i < column_ancho_amarillo.length; i++) {
+        column_ancho_amarillo[i].style.width = 60 + "px";
+    }
+
     if (ancho < 768) {
     for (var i = 0; i < column_ancho.length; i++) {
         column_ancho[i].style.width = 40 + "px";
