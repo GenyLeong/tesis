@@ -216,63 +216,26 @@ Highcharts.chart('container-1', {
             backgroundColor: '#F3F5F6',
         },
         title: {
-            text: ''
+            text: null
         },
         xAxis: {
-            categories: ['Excel', 'Google refine', 'Tableau', 'Google fusion tables', 'Otros'],
-            title: {
-                text: null
-            },
-             lineColor: '#000000'
-        },
-        yAxis: {
-            title: {
-                text: 'Porcentaje',
-                align: 'high'
-            },
-             lineColor: '#000000'
-
-        },
+            categories: ['Excel (9 periodistas)', 'Google Refine (0 periodistas)', 'Tableau (1 periodista)', 'Google fusion tables (0 periodistas)', 'Otros (3 periodistas)']
+        },    
         tooltip: {
-            headerFormat: '<p style="font-size:16px; color:#FFFFFF">{point.key}</p><br>',
-            pointFormat: '<p style="text-align:center"><b style="padding:0; color:#FFFFFF">{point.y} </b></p>',
-            valueSuffix: ' %',
+            shared: true,
+            useHTML: true,
+            headerFormat: '<table><p style="font-size:16px; color:#FFFFFF""><b>{point.key}</b></p><table>',
+            pointFormat: '<tr><td style="color:#FFFFFF";>{series.name}: </td>' +
+                '<td style="text-align: center; color:#FFFFFF"><b>{point.y} %</b></td></tr>',
             backgroundColor: '{series.color}'
-        },
-        legend: {
-            layout: 'vertical',
-            align: 'right',
-            verticalAlign: 'top',
-            x: -40,
-            y: 80,
-            floating: true
-        },
+         },
         credits: {
             enabled: false
         },
         series: [{
-            name: 'Excel',
-            data: [50, '', '', '', '']
-        }, {
-            name: 'Google refine',
-            data: ['', 8.33, '', '', '']
-        }, {
-            name: 'Tableau',
-            data: ['', '', 12.5, '', '']
-        },
-        {
-            name: 'Google fusion tables',
-            data: ['', '', '', 8.33, '']
-        },
-        {
-            name: 'Otros',
-            data: ['', '', '', '', 20.84]
+            name: 'Periodistas',
+            data: [69.23, 0, 7.69, 0, 23.08]
         }],
-         navigation: {
-            buttonOptions: {
-                enabled: false
-            }
-        },
         responsive: {
             rules: [{
                 condition: {
